@@ -1,7 +1,119 @@
 <!DOCTYPE html>
-<html>
-<head></head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<style>
+
+ section {
+   border: 2px solid grey;
+ }
+ 
+.c1 {
+  list-style-type: upper-latin;
+
+}
+ .c2 {
+   list-style-type: lower-roman;
+ }
+
+h3::first-letter {
+ color: blue;
+ font-size: xx-large;
+
+}
+
+span::after {
+  content: "\2713";
+  color: green;
+  
+}
+
+
+hr {
+  border: red dotted 2px;
+}
+
+::marker {
+  color: red;
+}
+
+.linkovi li::before {
+  content: "\2023";
+  color: red;
+  font-size: 20px;
+
+}
+
+.linkovi {
+  list-style-type: none;
+}
+
+a:link {
+  color: red;
+}
+
+a:visited {
+  color: magenta;
+}
+
+a:hover {
+  background-color: lightgreen;
+  color: yellow;
+}
+
+
+a:active {
+  background-color: yellow;
+  color: lightgreen;
+}
+
+
+</style>
+</head>
 <body>
-  <p>Ovo je paragraf.</p>
+  <h1>Zadatak 1</h1>
+
+<section>
+<h3> 1. Koji je glavni grad Hrvatske?</h3>
+  <ol class="c1">
+    <li>Koprivnica</li>
+    <li>Osijek</li>
+    <li><span>Zagreb</span></li>
+    <li>Rijeka</li>
+  </ol>
+
+</section>
+<br>
+<hr>
+<br>
+<section>
+  <h3>2. Koja je rijeka koja protječe kroz Hrvatsku najduža?</h3>
+  <ol class="c2">
+    <li>Mura</li>
+    <li><span>Sava</span></li>
+    <li>Drava</li>
+    <li>Dunav</li>
+  </ol>
+
+</section>
+<br>
+<hr>
+<br>
+<section>
+<h3>Pogledajte sljedeće video linkove</h3>
+<ul class="linkovi">
+   <li><a href="https://www.youtube.com">Play bass guitar</a></li><br>
+   <li><a href="https://www.youtube.com">Stop eating sugar</a></li><br>
+   <li><a href="https://www.youtube.com">Treci</a></li><br>
+   <li><a href="https://www.youtube.com">Cetvrti</a></li><br>
+   <li><a href="https://www.youtube.com">Peti</a></li>
+</ul>
+
+</section>
+<br>
+<hr>
 </body>
 </html>
