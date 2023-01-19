@@ -7,6 +7,32 @@
   <title>Document</title>
 <style>
 
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.moj-brojac {
+  margin-left: 0;
+  padding-right: 0;
+  list-style-type: none;
+}
+
+.moj-brojac li::before {
+  content: counter(step-counter);
+  margin-right: 5px;
+  font-size: 80%;
+  background-color: red;
+  color: blue;
+  font-weight: bold;
+  padding: 3px 8px;
+  border-radius: 15px;
+}
+
+.moj-brojac li {
+  counter-increment: step-counter;
+  margin-top: 3px;
+}
+
  section {
    border: 2px solid grey;
  }
@@ -28,6 +54,7 @@ h3::first-letter {
 span::after {
   content: "\2713";
   color: green;
+  font-weight: 900;
   
 }
 
@@ -115,5 +142,16 @@ a:active {
 </section>
 <br>
 <hr>
+<br>
+<br>
+
+<ol class="moj-brojac">
+  <li><span>Prvi element</span></li>
+  <li>Drugi element</li>
+  <li>treci element</li>
+  <li>cetvrti element</li>
+  <li><span>Peti element</span></li>
+  <li>sesti element</li>
+</ol>
 </body>
 </html>
